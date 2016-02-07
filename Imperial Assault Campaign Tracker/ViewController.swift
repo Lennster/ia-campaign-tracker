@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         campaignTextField.delegate = self
         campaignSummaryTableView.dataSource = self
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +73,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return("Campaign Statistics")
+    }
+    
+    func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+            return("Campaign created:")
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
