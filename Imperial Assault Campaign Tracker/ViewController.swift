@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
 
     // MARK: Properties
     
@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var campaignTextField: UITextField!
     @IBOutlet weak var campaignImage: UIImageView!
     @IBOutlet weak var campaignNotesTextView: UITextView!
-    
+    @IBOutlet weak var campaignSummaryTableView: UITableView!
     
     // MARK: Initialization
     
@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
                super.viewDidLoad()
         
         campaignTextField.delegate = self
+        campaignSummaryTableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +63,24 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Dismiss the picker.
         dismissViewControllerAnimated(true, completion: nil)
     }
+
+    // MARK: UITableViewDataSource
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "CampaignSummaryCell")
+        
+        cell.textLabel?.text = "Some text"
+        
+        return cell
+    }
     
     // MARK: Actions
     
@@ -75,6 +94,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .PhotoLibrary
+        imagePickerController.modalPresentationStyle = .CurrentContext
         
         // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
