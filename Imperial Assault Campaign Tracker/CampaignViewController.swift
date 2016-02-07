@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CampaignViewController.swift
 //  Imperial Assault Campaign Tracker
 //
 //  Created by Martin Leonard on 2016-01-31.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
+class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
 
     // MARK: Properties
     
