@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F63033A01C67EA4600B8818B /* CampaignListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630339F1C67EA4600B8818B /* CampaignListTableViewCell.swift */; };
 		F69B36AD1C5E85EA00F5C5DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B36AC1C5E85EA00F5C5DF /* AppDelegate.swift */; };
 		F69B36AF1C5E85EA00F5C5DF /* CampaignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B36AE1C5E85EA00F5C5DF /* CampaignViewController.swift */; };
 		F69B36B21C5E85EA00F5C5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69B36B01C5E85EA00F5C5DF /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		F69B36B71C5E85EA00F5C5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69B36B51C5E85EA00F5C5DF /* LaunchScreen.storyboard */; };
 		F69B36C21C5E85EA00F5C5DF /* Imperial_Assault_Campaign_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B36C11C5E85EA00F5C5DF /* Imperial_Assault_Campaign_TrackerTests.swift */; };
 		F69B36CD1C5E85EA00F5C5DF /* Imperial_Assault_Campaign_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B36CC1C5E85EA00F5C5DF /* Imperial_Assault_Campaign_TrackerUITests.swift */; };
+		F6B34EA21C6900B1003B678B /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B34EA11C6900B1003B678B /* Campaign.swift */; };
+		F6B34EA31C6900B1003B678B /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B34EA11C6900B1003B678B /* Campaign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F630339E1C66CE6A00B8818B /* Documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documents; sourceTree = "<group>"; };
+		F630339F1C67EA4600B8818B /* CampaignListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListTableViewCell.swift; sourceTree = "<group>"; };
 		F69B36A91C5E85EA00F5C5DF /* Imperial Assault Campaign Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imperial Assault Campaign Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69B36AC1C5E85EA00F5C5DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F69B36AE1C5E85EA00F5C5DF /* CampaignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		F69B36C81C5E85EA00F5C5DF /* Imperial Assault Campaign TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imperial Assault Campaign TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69B36CC1C5E85EA00F5C5DF /* Imperial_Assault_Campaign_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imperial_Assault_Campaign_TrackerUITests.swift; sourceTree = "<group>"; };
 		F69B36CE1C5E85EA00F5C5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B34EA11C6900B1003B678B /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,8 @@
 				F69B36AC1C5E85EA00F5C5DF /* AppDelegate.swift */,
 				F69B36AE1C5E85EA00F5C5DF /* CampaignViewController.swift */,
 				F69B36B01C5E85EA00F5C5DF /* Main.storyboard */,
+				F630339F1C67EA4600B8818B /* CampaignListTableViewCell.swift */,
+				F6B34EA11C6900B1003B678B /* Campaign.swift */,
 				F69B36B31C5E85EA00F5C5DF /* Assets.xcassets */,
 				F69B36B51C5E85EA00F5C5DF /* LaunchScreen.storyboard */,
 				F69B36B81C5E85EA00F5C5DF /* Info.plist */,
@@ -259,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63033A01C67EA4600B8818B /* CampaignListTableViewCell.swift in Sources */,
+				F6B34EA21C6900B1003B678B /* Campaign.swift in Sources */,
 				F69B36AF1C5E85EA00F5C5DF /* CampaignViewController.swift in Sources */,
 				F69B36AD1C5E85EA00F5C5DF /* AppDelegate.swift in Sources */,
 			);
@@ -269,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F69B36C21C5E85EA00F5C5DF /* Imperial_Assault_Campaign_TrackerTests.swift in Sources */,
+				F6B34EA31C6900B1003B678B /* Campaign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

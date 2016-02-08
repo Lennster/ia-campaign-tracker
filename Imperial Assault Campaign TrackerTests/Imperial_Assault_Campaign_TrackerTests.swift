@@ -11,26 +11,19 @@ import XCTest
 
 class Imperial_Assault_Campaign_TrackerTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    // MARK: Campaign model tests
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testCampaignInitialization() {
+        // Failure cases
+        let noName = Campaign(name: "", notes: nil)
+        XCTAssertNil(noName, "Empty name is invalid")
+        
+        //Success cases
+        let campaign1 = Campaign(name:"My First Campaign", notes:nil)
+        XCTAssertNotNil(campaign1)
+        
+        let campaign2 = Campaign(name:"My First Campaign", notes:"Some notes")
+        XCTAssertNotNil(campaign2)
+        
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
