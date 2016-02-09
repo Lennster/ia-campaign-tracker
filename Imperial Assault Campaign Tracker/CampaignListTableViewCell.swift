@@ -12,14 +12,13 @@ class CampaignListTableViewCell: UITableViewCell {
 
     // MARK: Properties
     
-    @IBOutlet weak var CampaignNameLabel: UILabel!
-    @IBOutlet weak var CampaignImageView: UIImageView!
-    @IBOutlet weak var CampaignCreatedDateLabel: UILabel!
-    @IBOutlet weak var CampaignUpdatedDateLabel: UILabel!
-    @IBOutlet weak var CampaignImperialPlayerLabel: UILabel!
-    @IBOutlet weak var CampaignCurrentMissionLabel: UILabel!
-    @IBOutlet weak var CampaignRebelPlayersLabel: UILabel!
-    
+    @IBOutlet weak var campaignName: UILabel!
+    @IBOutlet weak var campaignImageView: UIImageView!
+    @IBOutlet weak var campaignCreatedDate: UILabel!
+    @IBOutlet weak var campaignUpdatedDate: UILabel!
+    @IBOutlet weak var imperialPlayer: UILabel!
+    @IBOutlet weak var currentMission: UILabel!
+    @IBOutlet weak var rebelPlayers: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

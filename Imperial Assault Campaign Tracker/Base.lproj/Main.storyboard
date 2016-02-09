@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kyO-JP-quF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="98W-ms-zxQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -7,17 +7,17 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Imperial Assault Campaigns-->
         <scene sceneID="vdJ-Xv-5L6">
             <objects>
-                <tableViewController id="kyO-JP-quF" sceneMemberID="viewController">
+                <tableViewController id="kyO-JP-quF" customClass="CampaignListTableViewController" customModule="Imperial_Assault_Campaign_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="lB9-QK-t5E">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CampaignListTableViewCell" rowHeight="120" id="pUq-PI-Cps" customClass="CampaignListTableViewCell" customModule="Imperial_Assault_Campaign_Tracker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pUq-PI-Cps" id="kFe-Rd-Vgm">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
@@ -42,7 +42,7 @@
                                                             <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GE0-cA-BzL">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GE0-cA-BzL">
                                                             <rect key="frame" x="0.0" y="39" width="472" height="44"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3yk-fR-qyD">
@@ -63,19 +63,19 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mvz-VJ-95g">
-                                                                    <rect key="frame" x="46" y="0.0" width="426" height="44"/>
+                                                                    <rect key="frame" x="66" y="0.0" width="406" height="44"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-7d-t1H">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="426" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="406" height="17"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBG-cA-FuG" userLabel="Imperial Player">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="208" height="17"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="17"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77C-8T-Cvq" userLabel="Current Mission">
-                                                                                    <rect key="frame" x="218" y="0.0" width="208" height="17"/>
+                                                                                    <rect key="frame" x="208" y="0.0" width="198" height="17"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -107,13 +107,14 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="CampaignCreatedDateLabel" destination="eAN-kO-AtL" id="ebY-bV-v4n"/>
-                                    <outlet property="CampaignCurrentMissionLabel" destination="77C-8T-Cvq" id="GPH-dh-QKN"/>
-                                    <outlet property="CampaignImageView" destination="PPR-B1-9BQ" id="v5S-n7-BMR"/>
-                                    <outlet property="CampaignImperialPlayerLabel" destination="jBG-cA-FuG" id="B6H-Yl-yKo"/>
-                                    <outlet property="CampaignNameLabel" destination="N1A-em-Egx" id="kSO-Us-MKC"/>
-                                    <outlet property="CampaignRebelPlayersLabel" destination="Xof-Hh-siA" id="Bn1-6t-DeW"/>
-                                    <outlet property="CampaignUpdatedDateLabel" destination="8iR-um-dcj" id="jNF-3E-Lsr"/>
+                                    <outlet property="campaignCreatedDate" destination="eAN-kO-AtL" id="sCt-Kb-SP0"/>
+                                    <outlet property="campaignImageView" destination="PPR-B1-9BQ" id="Dvd-ff-stQ"/>
+                                    <outlet property="campaignName" destination="N1A-em-Egx" id="9wa-Bd-Xnt"/>
+                                    <outlet property="campaignUpdatedDate" destination="8iR-um-dcj" id="Qlx-aJ-X3K"/>
+                                    <outlet property="currentMission" destination="77C-8T-Cvq" id="pIc-LJ-JQK"/>
+                                    <outlet property="imperialPlayer" destination="jBG-cA-FuG" id="PCC-xF-Bl7"/>
+                                    <outlet property="rebelPlayers" destination="Xof-Hh-siA" id="qvr-OL-KkJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showCampaignDetail" id="cLT-NB-Kwl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -122,10 +123,88 @@
                             <outlet property="delegate" destination="kyO-JP-quF" id="mG5-Kr-N9v"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Imperial Assault Campaigns" id="juv-p8-DWw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wUP-gm-njM">
+                            <connections>
+                                <segue destination="sZL-kU-hfv" kind="popoverPresentation" identifier="AddCampaignSegueIdentifierForPopOver" popoverAnchorBarButtonItem="wUP-gm-njM" id="w9S-g8-ZWt">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qX-gf-FrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="235"/>
+            <point key="canvasLocation" x="1222" y="235"/>
+        </scene>
+        <!--Add Campaign-->
+        <scene sceneID="vDv-dq-hCT">
+            <objects>
+                <viewController id="iRG-q9-zBo" customClass="AddCampaignPopoverViewController" customModule="Imperial_Assault_Campaign_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f7y-SR-6JK"/>
+                        <viewControllerLayoutGuide type="bottom" id="BoO-Os-yBX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hI4-OD-JyE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fKY-jM-AFa">
+                                <rect key="frame" x="20" y="74" width="560" height="267"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Campaign Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nEd-Oq-COV">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campaign notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-A2-PNA" userLabel="Campaign Notes Label">
+                                        <rect key="frame" x="0.0" y="40" width="560" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="240" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-zP-xsY">
+                                        <rect key="frame" x="0.0" y="67" width="560" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="g6y-W8-UD9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fKY-jM-AFa" firstAttribute="leading" secondItem="hI4-OD-JyE" secondAttribute="leadingMargin" id="kKA-Nn-dms"/>
+                            <constraint firstItem="fKY-jM-AFa" firstAttribute="top" secondItem="f7y-SR-6JK" secondAttribute="bottom" constant="10" id="siw-mK-q49"/>
+                            <constraint firstItem="fKY-jM-AFa" firstAttribute="trailing" secondItem="hI4-OD-JyE" secondAttribute="trailingMargin" id="tQY-v8-Fxq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Campaign" id="Sgm-Z6-pCi">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pfQ-MG-YFh">
+                            <connections>
+                                <action selector="cancel:" destination="iRG-q9-zBo" id="E6p-Q4-a6N"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7OH-cP-Q7h">
+                            <connections>
+                                <segue destination="NkB-3J-cWZ" kind="unwind" unwindAction="unwindToMealList:" id="Ss9-NE-m3g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="300"/>
+                    <connections>
+                        <outlet property="newCampaignNameTextField" destination="nEd-Oq-COV" id="p7i-Gq-49S"/>
+                        <outlet property="newCampaignNotesTextView" destination="tqb-zP-xsY" id="jUK-87-dEb"/>
+                        <outlet property="saveButton" destination="7OH-cP-Q7h" id="YUS-Jq-ICX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D38-es-YXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NkB-3J-cWZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2338" y="-508"/>
         </scene>
         <!--Campaign View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -140,16 +219,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-kw-AgC">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <rect key="frame" x="20" y="74" width="560" height="526"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="260" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtR-cj-kkF">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wgk-Ex-qEY">
-                                        <rect key="frame" x="0.0" y="26" width="560" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="120"/>
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-f4-lb1">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -173,22 +246,22 @@
                                         </constraints>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Campaign notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kzn-hN-E7i">
-                                        <rect key="frame" x="0.0" y="156" width="560" height="144"/>
+                                        <rect key="frame" x="0.0" y="130" width="560" height="116"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="epE-ii-6fU"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="epE-ii-6fU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                     </textView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="j2T-bT-OP5">
-                                        <rect key="frame" x="0.0" y="310" width="560" height="270"/>
+                                        <rect key="frame" x="0.0" y="256" width="560" height="270"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="270" id="hCg-iF-edZ"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="yvR-QS-U1U" style="IBUITableViewCellStyleDefault" id="wgO-6R-eqg">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CampaignSummaryCell" textLabel="yvR-QS-U1U" style="IBUITableViewCellStyleDefault" id="wgO-6R-eqg">
                                                 <rect key="frame" x="0.0" y="50" width="560" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wgO-6R-eqg" id="FKP-aD-nlc">
@@ -208,23 +281,18 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="j2T-bT-OP5" secondAttribute="bottom" id="4Nj-Rp-TS8"/>
-                                    <constraint firstItem="Wgk-Ex-qEY" firstAttribute="leading" secondItem="Vji-kw-AgC" secondAttribute="leading" id="7fr-bW-qdS"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="Vji-kw-AgC" secondAttribute="leading" id="0um-On-i8N"/>
-                            <constraint firstItem="Vji-kw-AgC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1Je-Yo-gKh"/>
+                            <constraint firstItem="Vji-kw-AgC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="1Je-Yo-gKh"/>
                             <constraint firstItem="Vji-kw-AgC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Sxi-s1-9mC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vji-kw-AgC" secondAttribute="bottom" id="ccp-uF-V89"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="campaignImage" destination="5J5-f4-lb1" id="lqK-tL-TI9"/>
-                        <outlet property="campaignName" destination="qtR-cj-kkF" id="kqW-WL-hjR"/>
                         <outlet property="campaignNotesTextView" destination="kzn-hN-E7i" id="edo-mf-C5l"/>
                         <outlet property="campaignSummaryTableView" destination="j2T-bT-OP5" id="dYB-HZ-p0Y"/>
                         <outlet property="campaignTextField" destination="fR6-bw-hMF" id="M3Y-jE-Ab8"/>
@@ -237,7 +305,43 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1121" y="235"/>
+            <point key="canvasLocation" x="1933" y="235"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dGb-gn-IiY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="98W-ms-zxQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="COi-bh-wvY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kyO-JP-quF" kind="relationship" relationship="rootViewController" id="4e7-lo-agk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9i2-Jb-LRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="235"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eqb-1r-PFs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sZL-kU-hfv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="epk-T3-ZOE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iRG-q9-zBo" kind="relationship" relationship="rootViewController" id="h2c-4b-UAS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oge-5G-34N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="-508"/>
         </scene>
     </scenes>
     <resources>

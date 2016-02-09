@@ -37,4 +37,31 @@ class Campaign {
             return nil
         }
     }
+    
+    func updateCampaign(name: String?, photo: UIImage?, notes: String?) {
+        var updated = false
+        
+        if name != nil && Campaign.isValidCampaignName(name) {
+            self.name = name!
+            updated = true
+        }
+        if photo != nil {
+            self.photo = photo!
+            updated = true
+        }
+        if notes != nil {
+            self.notes = notes!
+            updated = true
+        }
+        
+        if updated {
+            self.updatedDate = NSDate()
+        }
+    }
+    
+    static func isValidCampaignName(name: String!) -> Bool {
+        let text = name ?? ""
+
+        return !text.isEmpty
+    }
 }

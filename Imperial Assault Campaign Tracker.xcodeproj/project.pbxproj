@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6230ABD1C692687009C3453 /* CampaignListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6230ABC1C692687009C3453 /* CampaignListTableViewController.swift */; };
+		F6230ABF1C693CBD009C3453 /* AddCampaignPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6230ABE1C693CBD009C3453 /* AddCampaignPopoverViewController.swift */; };
 		F63033A01C67EA4600B8818B /* CampaignListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630339F1C67EA4600B8818B /* CampaignListTableViewCell.swift */; };
 		F69B36AD1C5E85EA00F5C5DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B36AC1C5E85EA00F5C5DF /* AppDelegate.swift */; };
 		F69B36AF1C5E85EA00F5C5DF /* CampaignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B36AE1C5E85EA00F5C5DF /* CampaignViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6230ABC1C692687009C3453 /* CampaignListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListTableViewController.swift; sourceTree = "<group>"; };
+		F6230ABE1C693CBD009C3453 /* AddCampaignPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCampaignPopoverViewController.swift; sourceTree = "<group>"; };
 		F630339E1C66CE6A00B8818B /* Documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documents; sourceTree = "<group>"; };
 		F630339F1C67EA4600B8818B /* CampaignListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignListTableViewCell.swift; sourceTree = "<group>"; };
 		F69B36A91C5E85EA00F5C5DF /* Imperial Assault Campaign Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imperial Assault Campaign Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +111,8 @@
 				F69B36AC1C5E85EA00F5C5DF /* AppDelegate.swift */,
 				F69B36AE1C5E85EA00F5C5DF /* CampaignViewController.swift */,
 				F69B36B01C5E85EA00F5C5DF /* Main.storyboard */,
+				F6230ABE1C693CBD009C3453 /* AddCampaignPopoverViewController.swift */,
+				F6230ABC1C692687009C3453 /* CampaignListTableViewController.swift */,
 				F630339F1C67EA4600B8818B /* CampaignListTableViewCell.swift */,
 				F6B34EA11C6900B1003B678B /* Campaign.swift */,
 				F69B36B31C5E85EA00F5C5DF /* Assets.xcassets */,
@@ -266,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6230ABF1C693CBD009C3453 /* AddCampaignPopoverViewController.swift in Sources */,
 				F63033A01C67EA4600B8818B /* CampaignListTableViewCell.swift in Sources */,
+				F6230ABD1C692687009C3453 /* CampaignListTableViewController.swift in Sources */,
 				F6B34EA21C6900B1003B678B /* Campaign.swift in Sources */,
 				F69B36AF1C5E85EA00F5C5DF /* CampaignViewController.swift in Sources */,
 				F69B36AD1C5E85EA00F5C5DF /* AppDelegate.swift in Sources */,

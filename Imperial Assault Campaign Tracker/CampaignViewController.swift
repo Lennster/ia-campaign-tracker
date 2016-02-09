@@ -12,20 +12,28 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
 
     // MARK: Properties
     
-    @IBOutlet weak var campaignName: UILabel!
     @IBOutlet weak var campaignTextField: UITextField!
     @IBOutlet weak var campaignImage: UIImageView!
     @IBOutlet weak var campaignNotesTextView: UITextView!
     @IBOutlet weak var campaignSummaryTableView: UITableView!
     
+    // This value is passed via sender in the prepareForSegue call
+    var campaign: Campaign?
+    
     // MARK: Initialization
     
     override func viewDidLoad() {
-               super.viewDidLoad()
+        super.viewDidLoad()
         
         campaignTextField.delegate = self
         campaignSummaryTableView.dataSource = self
-
+        
+        if let campaign = campaign {
+            navigationItem.title = campaign.name
+            campaignTextField.text = campaign.name
+            campaignImage.image = campaign.photo
+            campaignNotesTextView.text = campaign.notes
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,8 +51,7 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        print("Entered value \(textField.text)")
-        campaignName.text = textField.text
+        navigationItem.title = textField.text
     }
     
     // MARK: UIImagePickerControllerDelegate
@@ -90,6 +97,13 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
         
         return cell
     }
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if Campaign.isValidCampaignName(campaignTextField.text) {
+            campaign?.updateCampaign(campaignTextField.text, photo: campaignImage.image, notes: campaignNotesTextView.text)
+        }
+    }
     
     // MARK: Actions
     
@@ -110,6 +124,6 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
         
         presentViewController(imagePickerController, animated: true, completion: nil)
         
-    }
+    }    
 }
 
