@@ -190,7 +190,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="7OH-cP-Q7h">
                             <connections>
-                                <segue destination="NkB-3J-cWZ" kind="unwind" unwindAction="unwindToMealList:" id="Ss9-NE-m3g"/>
+                                <segue destination="NkB-3J-cWZ" kind="unwind" identifier="addCampaignUnwind" unwindAction="unwindToMealList:" id="Ss9-NE-m3g"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -291,6 +291,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vji-kw-AgC" secondAttribute="bottom" id="ccp-uF-V89"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0Vx-gg-WWv">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Campaigns" id="BqN-fp-lmz">
+                            <connections>
+                                <segue destination="bgo-Zm-nGW" kind="unwind" identifier="campaignViewUnwind" unwindAction="unwindToMealList:" id="KI4-pJ-Yx6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="campaignImage" destination="5J5-f4-lb1" id="lqK-tL-TI9"/>
                         <outlet property="campaignNotesTextView" destination="kzn-hN-E7i" id="edo-mf-C5l"/>
@@ -299,6 +306,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="bgo-Zm-nGW" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="B0Z-Kd-TSN">
                     <connections>
                         <action selector="selectCampaignImageFromLibrary:" destination="BYZ-38-t0r" id="hlo-aI-JTh"/>

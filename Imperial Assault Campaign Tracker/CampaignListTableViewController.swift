@@ -106,14 +106,17 @@ class CampaignListTableViewController: UITableViewController {
     // MARK: Actions
     
     @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
-        if let sourceViewController = sender.sourceViewController as? AddCampaignPopoverViewController, campaign = sourceViewController.campaign {
-            
-            if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                // Update an existing campaign
-                campaigns[selectedIndexPath.row] = campaign
-                tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
+        if sender.identifier == "campaignViewUnwind" {
+            if let sourceViewController = sender.sourceViewController as? CampaignViewController, campaign = sourceViewController.campaign {
+                if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                    // Update an existing campaign
+                    campaigns[selectedIndexPath.row] = campaign
+                    tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
+                }
             }
-            else {
+        }
+        else if sender.identifier == "addCampaignUnwind" {
+            if let sourceViewController = sender.sourceViewController as? AddCampaignPopoverViewController, campaign = sourceViewController.campaign {
                 // Add a new campaign
                 let newIndexPath = NSIndexPath(forRow: campaigns.count, inSection: 0)
                 campaigns.append(campaign)
@@ -127,7 +130,7 @@ class CampaignListTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showCampaignDetail" {
-            let campaignViewController = segue.destinationViewController as! CampaignViewController
+            let campaignViewController = segue.destinationViewController    as! CampaignViewController
             
             // Get the cell that generated this segue
             if let selectedCampaignCell = sender as? CampaignListTableViewCell {

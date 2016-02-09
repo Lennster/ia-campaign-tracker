@@ -87,6 +87,7 @@ class AddCampaignPopoverViewController: UIViewController, UIPopoverPresentationC
         
         //segue for the popover add campaign window
         if segue.identifier == "AddCampaignSegueIdentifierForPopOver" {
+            print("AddCampaign.prepareForSegue")
             let controller = segue.destinationViewController
             controller.popoverPresentationController!.delegate = self
         }

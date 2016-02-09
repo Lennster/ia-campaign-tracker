@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
+class CampaignViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
 
     // MARK: Properties
     
@@ -26,6 +26,7 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
         super.viewDidLoad()
         
         campaignTextField.delegate = self
+        campaignNotesTextView.delegate = self
         campaignSummaryTableView.dataSource = self
         
         if let campaign = campaign {
@@ -35,7 +36,7 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
             campaignNotesTextView.text = campaign.notes
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -51,7 +52,16 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        navigationItem.title = textField.text
+        if Campaign.isValidCampaignName(campaignTextField.text) {
+            campaign?.updateCampaign(campaignTextField.text, photo: campaignImage.image, notes: campaignNotesTextView.text)
+            navigationItem.title = textField.text
+        }
+    }
+    
+    // MARK: UITextViewDelegate
+    
+    func textViewDidEndEditing(textField: UITextView) {
+        campaign?.updateCampaign(nil, photo: nil, notes: campaignNotesTextView.text)
     }
     
     // MARK: UIImagePickerControllerDelegate
@@ -67,6 +77,7 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
         
         // Set photoImageView to display the selected image.
         campaignImage.image = selectedImage
+        campaign?.updateCampaign(nil, photo: campaignImage.image, notes: nil)
         
         // Dismiss the picker.
         dismissViewControllerAnimated(true, completion: nil)
@@ -98,12 +109,6 @@ class CampaignViewController: UIViewController, UITextFieldDelegate, UIImagePick
         return cell
     }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if Campaign.isValidCampaignName(campaignTextField.text) {
-            campaign?.updateCampaign(campaignTextField.text, photo: campaignImage.image, notes: campaignNotesTextView.text)
-        }
-    }
     
     // MARK: Actions
     
