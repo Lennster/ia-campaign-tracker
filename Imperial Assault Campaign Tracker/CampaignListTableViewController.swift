@@ -105,22 +105,22 @@ class CampaignListTableViewController: UITableViewController {
 
     // MARK: Actions
     
-    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
-        if sender.identifier == "campaignViewUnwind" {
-            if let sourceViewController = sender.sourceViewController as? CampaignViewController, campaign = sourceViewController.campaign {
-                if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                    // Update an existing campaign
-                    campaigns[selectedIndexPath.row] = campaign
-                    tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
-                }
-            }
+    @IBAction func unwindFromAddCampaign(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController as? AddCampaignPopoverViewController, campaign = sourceViewController.campaign {
+            // Add a new campaign
+            let newIndexPath = NSIndexPath(forRow: campaigns.count, inSection: 0)
+            campaigns.append(campaign)
+            tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
         }
-        else if sender.identifier == "addCampaignUnwind" {
-            if let sourceViewController = sender.sourceViewController as? AddCampaignPopoverViewController, campaign = sourceViewController.campaign {
-                // Add a new campaign
-                let newIndexPath = NSIndexPath(forRow: campaigns.count, inSection: 0)
-                campaigns.append(campaign)
-                tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+    }
+
+    
+    @IBAction func unwindFromCampaignView(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController as? CampaignViewController, campaign = sourceViewController.campaign {
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                // Update an existing campaign
+                campaigns[selectedIndexPath.row] = campaign
+                tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: .None)
             }
         }
     }

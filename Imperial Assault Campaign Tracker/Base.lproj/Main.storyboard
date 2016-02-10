@@ -23,27 +23,27 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8fL-eR-r6d">
-                                            <rect key="frame" x="0.0" y="-2" width="592" height="120"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8fL-eR-r6d">
+                                            <rect key="frame" x="8" y="8" width="584" height="100"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="PPR-B1-9BQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="120" id="Vba-mh-2cD"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Vba-mh-2cD"/>
                                                         <constraint firstAttribute="width" secondItem="PPR-B1-9BQ" secondAttribute="height" multiplier="1:1" id="fjL-5A-4pD"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fAw-69-ooT">
-                                                    <rect key="frame" x="120" y="19" width="472" height="83"/>
+                                                    <rect key="frame" x="108" y="9" width="476" height="83"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1A-em-Egx" userLabel="Campaign Name">
-                                                            <rect key="frame" x="0.0" y="0.0" width="472" height="24"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="476" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GE0-cA-BzL">
-                                                            <rect key="frame" x="0.0" y="39" width="472" height="44"/>
+                                                            <rect key="frame" x="0.0" y="39" width="476" height="44"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3yk-fR-qyD">
                                                                     <rect key="frame" x="0.0" y="0.0" width="36" height="44"/>
@@ -63,19 +63,19 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mvz-VJ-95g">
-                                                                    <rect key="frame" x="66" y="0.0" width="406" height="44"/>
+                                                                    <rect key="frame" x="66" y="0.0" width="410" height="44"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-7d-t1H">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="406" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="410" height="17"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBG-cA-FuG" userLabel="Imperial Player">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="17"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="17"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77C-8T-Cvq" userLabel="Current Mission">
-                                                                                    <rect key="frame" x="208" y="0.0" width="198" height="17"/>
+                                                                                    <rect key="frame" x="210" y="0.0" width="200" height="17"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -102,8 +102,8 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="8fL-eR-r6d" secondAttribute="trailing" id="F6I-K6-QBe"/>
-                                        <constraint firstItem="8fL-eR-r6d" firstAttribute="top" secondItem="kFe-Rd-Vgm" secondAttribute="topMargin" constant="-10" id="FBJ-3j-bh0"/>
-                                        <constraint firstItem="8fL-eR-r6d" firstAttribute="leading" secondItem="kFe-Rd-Vgm" secondAttribute="leadingMargin" constant="-8" id="rvS-Qh-pbG"/>
+                                        <constraint firstItem="8fL-eR-r6d" firstAttribute="top" secondItem="kFe-Rd-Vgm" secondAttribute="topMargin" id="FBJ-3j-bh0"/>
+                                        <constraint firstItem="8fL-eR-r6d" firstAttribute="leading" secondItem="kFe-Rd-Vgm" secondAttribute="leadingMargin" id="rvS-Qh-pbG"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -160,7 +160,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campaign notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-A2-PNA" userLabel="Campaign Notes Label">
                                         <rect key="frame" x="0.0" y="40" width="560" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="240" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-zP-xsY">
@@ -175,7 +175,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fKY-jM-AFa" firstAttribute="leading" secondItem="hI4-OD-JyE" secondAttribute="leadingMargin" id="kKA-Nn-dms"/>
                             <constraint firstItem="fKY-jM-AFa" firstAttribute="top" secondItem="f7y-SR-6JK" secondAttribute="bottom" constant="10" id="siw-mK-q49"/>
@@ -190,7 +190,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="7OH-cP-Q7h">
                             <connections>
-                                <segue destination="NkB-3J-cWZ" kind="unwind" identifier="addCampaignUnwind" unwindAction="unwindToMealList:" id="Ss9-NE-m3g"/>
+                                <segue destination="NkB-3J-cWZ" kind="unwind" identifier="addCampaignUnwind" unwindAction="unwindFromAddCampaign:" id="Ss9-NE-m3g"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -218,38 +218,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-kw-AgC">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-kw-AgC">
                                 <rect key="frame" x="20" y="74" width="560" height="526"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wgk-Ex-qEY">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="120"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wgk-Ex-qEY">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="139"/>
                                         <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-f4-lb1">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-f4-lb1">
+                                                <rect key="frame" x="0.0" y="20" width="124" height="100"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="5J5-f4-lb1" secondAttribute="height" id="9Kk-Bu-IgG"/>
-                                                    <constraint firstAttribute="width" constant="120" id="Fdw-iO-sSr"/>
+                                                    <constraint firstAttribute="height" constant="100" id="mo9-Oc-SnV"/>
+                                                    <constraint firstAttribute="width" secondItem="5J5-f4-lb1" secondAttribute="height" id="rRi-ls-upL"/>
                                                 </constraints>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="B0Z-Kd-TSN" appends="YES" id="IA8-SC-PzN"/>
                                                 </connections>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Campaign Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fR6-bw-hMF">
-                                                <rect key="frame" x="130" y="45" width="430" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Campaign Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fR6-bw-hMF">
+                                                <rect key="frame" x="134" y="55" width="426" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="5J5-f4-lb1" firstAttribute="top" secondItem="Wgk-Ex-qEY" secondAttribute="top" id="cOS-Dn-GCe"/>
-                                        </constraints>
                                     </stackView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Campaign notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kzn-hN-E7i">
-                                        <rect key="frame" x="0.0" y="130" width="560" height="116"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="780" misplaced="YES" text="Notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hip-k3-0E9">
+                                        <rect key="frame" x="0.0" y="149" width="560" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Campaign notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kzn-hN-E7i">
+                                        <rect key="frame" x="0.0" y="176" width="560" height="70"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="epE-ii-6fU"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="epE-ii-6fU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
@@ -283,7 +286,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="Vji-kw-AgC" secondAttribute="leading" id="0um-On-i8N"/>
                             <constraint firstItem="Vji-kw-AgC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="1Je-Yo-gKh"/>
@@ -294,7 +297,7 @@
                     <navigationItem key="navigationItem" id="0Vx-gg-WWv">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Campaigns" id="BqN-fp-lmz">
                             <connections>
-                                <segue destination="bgo-Zm-nGW" kind="unwind" identifier="campaignViewUnwind" unwindAction="unwindToMealList:" id="KI4-pJ-Yx6"/>
+                                <segue destination="bgo-Zm-nGW" kind="unwind" identifier="campaignViewUnwind" unwindAction="unwindFromCampaignView:" id="KI4-pJ-Yx6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
