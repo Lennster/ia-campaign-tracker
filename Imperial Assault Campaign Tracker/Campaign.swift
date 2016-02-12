@@ -10,15 +10,15 @@ import UIKit
 
 class Campaign {
     //MARK: Properties
-    var name: String
-    var photo: UIImage?
-    var notes: String?
-    var createdDate: NSDate
-    var updatedDate:NSDate
-    var rebelXP: Int
-    var rebelCredits: Int
-    var imperialXP: Int
-    var imperialInfluence: Int
+    private(set) var name: String
+    private(set) var photo: UIImage?
+    private(set) var notes: String?
+    private(set) var createdDate: NSDate
+    private(set) var updatedDate:NSDate
+    private(set) var rebelXP: Int
+    private(set) var rebelCredits: Int
+    private(set) var imperialXP: Int
+    private(set) var imperialInfluence: Int
     
     // MARK: Initialization
     
